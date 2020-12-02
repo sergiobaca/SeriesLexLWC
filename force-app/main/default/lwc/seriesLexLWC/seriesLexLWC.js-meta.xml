@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Series Lex</masterLabel>
+    <description>Ejepmlo Series Lex</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="title" label="Titulo" type="String" default=""/>
+            <property name="recordIdtxt" label="Id de campo" type="String" default=""/>
+            <property name="relatedRecordFieldName" label="Campo Id" type="String" default=""/>
+            <property name="object" label="Objeto" type="String" default=""/>
+            <property name="columns" label="Columns" type="Integer" min="1" max="4" default="2"/>
+            <property name="dynamicFields" label="Campos a desplegar" type="String" default=""/>
+            <property name="densityMode" label="Densidad" type="String" default="auto" />
+            <property name="displayMode" label="Modo" type="String" default="readonly" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

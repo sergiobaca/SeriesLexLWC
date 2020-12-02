@@ -1,0 +1,20 @@
+<template>
+    <lightning-card> 
+        <template if:false={errorObjectInfo}>
+            <header slot="title" class="slds-card__header-link">
+                <div class="highlights-icon-container slds-avatar slds-m-right_small icon">
+                    <img src={relatedObjectIcon} alt="relatedObjectIcon" class="iconCustomRelatedRecord">
+                </div>
+                {title}
+            </header>
+            <lightning-record-form 
+                record-id = {recordIdtxt}
+                object-api-name = {object}
+                layout-type="Full"
+                mode = {displayMode}
+                density = {densityMode}> 
+            </lightning-record-form> 
+        </template>
+
+</lightning-card>
+</template>
